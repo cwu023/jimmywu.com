@@ -17,11 +17,11 @@
 <body>
 
   <!-- Nav -->
-  <div class="header">
+  <div class="header pg" id="nav">
     <nav class="navbar navbar-expand-lg navbar-light d-flex mx-auto py-0" style="max-width: 1100px;">
       <nav class="navbar py-0">
         <a class="navbar-brand" href="home.html">
-          <img src="image/logo.png" width="auto" height="60" alt="">
+          <img src="image/logo.png" width="auto" height="50" alt="">
         </a>
       </nav>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -32,17 +32,43 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link mx-3" href="home.html">Home<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link mx-3 active" href="works.html">Work</a>
+          <a class="nav-item nav-link mx-3 active" href="home.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link mx-3" href="works.html">Works</a>
           <a class="nav-item nav-link mx-3" href="contact.html">Contact</a>
         </div>
       </div>
     </nav>
   </div>
 
-  <div class="container " data-aos="fade-down">
-    <h1>Hi, I'm Jimmy Wu 😀<br> A Front-End Web Developer ♥️💻</h1>
+  <!-- Landing page -->
+  <div class="container" id="section01">
+    <h1 data-aos="zoom-in-up">Hi, I'm Jimmy Wu 😀</h1>
+    <h1 data-aos="zoom-in-down">A Front-End Web Developer ♥️👨‍💻</h1>
+    <a class="scroll" href="#section02"></a>
   </div>
+
+  <!-- Second landing page -->
+  <div class="container pg" id="section02">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="profile-img img-fluid" src="image/jimmy.jpg" alt="" data-aos="zoom-in-right">
+      </div>
+
+      <div class="col-sm-8">
+        <p data-aos="fade-left">I'm a front-end web developer who loves to create useful, interactive, and engaging user
+          experiences across all devices.📱💻 🖥️
+        </p>
+        <p data-aos="fade-left">I'm also a big 🏀 fan! Nothing relaxes me more than a simple pick-up game at the park. When
+          I have time, I like to lift heavy stuff for fun.🏋️‍♂️
+        </p>
+      </div>
+    </div>
+
+
+    <a class="scroll" href="#nav"></a>
+  </div>
+
+
 
 
 
@@ -64,15 +90,23 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+
   <script>
     AOS.init({
-      duration: 700
+      duration: 1500,
     });
   </script>
 </body>
