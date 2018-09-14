@@ -16,6 +16,10 @@ p {
   margin-bottom: 40px;
 }
 
+.resume {
+  font-size: 18px;
+}
+
 .profile-img {
   width: 200px;
   height: 200px;
@@ -233,12 +237,6 @@ body {
 
   p {
     font-size: 1rem;
-    text-align: center;
-  }
-
-  .intro-links {
-    width: 200px;
-    margin: 0 auto;
     text-align: center;
   }
 
