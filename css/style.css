@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 5.5vw;
+  font-size: 5vw;
   padding-top: 100px;
   text-align: center;
 }
@@ -120,6 +120,66 @@ p {
   transform: rotate(0);
 }
 
+/* Landing Page Animation */
+
+#flip {
+  height: 110px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 0 10px 5px;
+  height: 85px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  color: #dc143c;
+}
+
+#flip div:first-child div {
+  color: #42c58a;
+}
+
+#flip div:last-child div {
+  color: #4ec7f3;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
 /* Scroll Down Animation */
 html,
 body {
@@ -138,12 +198,12 @@ body {
   bottom: 0;
   left: 0;
   content: "";
-  height: 100vh;
+  height: 100%;
 }
 
-#section01 > a,
-#section02 > a {
+#section01 > a {
   position: absolute;
+  display: block;
   top: 80vh;
   left: 50%;
   width: 46px;
@@ -154,12 +214,7 @@ body {
   box-sizing: border-box;
 }
 
-#section02 > a {
-  top: 88vh;
-}
-
-#section01 > a::after,
-#section02 > a::after {
+#section01 > a::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,14 +229,7 @@ body {
   box-sizing: border-box;
 }
 
-#section02 > a::after {
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  margin-top: -4px;
-}
-
-#section01 > a::before,
-#section02 > a::before {
+#section01 > a::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -229,8 +277,36 @@ body {
   }
 }
 
+/* Back to Top */
+#topArrow {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: rgba(41, 99, 79, 0.2);
+  color: #29634f;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#topArrow:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
 /* Media Query */
-@media (max-width: 550px) {
+@media (max-width: 576px) {
   h1 {
     font-size: 9vw;
   }
@@ -238,6 +314,10 @@ body {
   p {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .resume {
+    margin-top: 20px;
   }
 
   .profile-img {
@@ -249,9 +329,30 @@ body {
   .col-sm-8 {
     margin-top: 40px;
   }
+
+  #flip {
+    font-size: 9vw;
+    height: 90px;
+  }
+
+  #flip > div > div {
+    height: 100px;
+    padding: 0 10px;
+  }
+
+  #flip div:second-child div {
+    margin-bottom: 5px;
+  }
 }
 
-@media (max-width: 990px) {
+@media (min-width: 577px) and (max-width: 991px) {
+  #flip {
+    font-size: 3.3rem;
+    height: 90px;
+  }
+}
+
+@media (max-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     padding-left: 10px;
   }
