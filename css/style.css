@@ -1,7 +1,30 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #eee5de;
-  color: #29634f;
+  color: #fff;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background-repeat: repeat-y;
+}
+
+a {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#section01 {
+  height: 100vh;
+}
+
+#section02 {
+  height: 100vh;
 }
 
 h1 {
@@ -16,21 +39,35 @@ p {
   margin-bottom: 40px;
 }
 
-.resume {
-  font-size: 18px;
-}
-
+/* Profile icture */
 .profile-img {
   width: 200px;
   height: 200px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.resume {
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 4px 5px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.resume:hover {
+  border: 1px solid #000;
+  color: #000;
 }
 
 .col-sm-4,
 .col-sm-8 {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .header {
@@ -39,25 +76,25 @@ p {
 
 /* Navbar styles */
 .navbar-light .navbar-nav .nav-link {
-  color: #29634f;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #29634f;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #29634f;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link.active:after {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
-  background: #29634f;
+  height: 1px;
+  background: #fff;
   width: 100%;
 }
 
@@ -65,8 +102,8 @@ p {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
-  background: #29634f;
+  height: 1px;
+  background: #fff;
   transition: width 0.3s;
 }
 
@@ -78,7 +115,7 @@ p {
 .icon-bar {
   width: 22px;
   height: 2px;
-  background-color: #29634f;
+  background-color: #fff;
   display: block;
   transition: all 0.2s;
   margin-top: 4px;
@@ -121,7 +158,6 @@ p {
 }
 
 /* Landing Page Animation */
-
 #flip {
   height: 110px;
   overflow: hidden;
@@ -139,18 +175,6 @@ p {
 
 #flip div:first-child {
   animation: show 5s linear infinite;
-}
-
-#flip div div {
-  color: #dc143c;
-}
-
-#flip div:first-child div {
-  color: #42c58a;
-}
-
-#flip div:last-child div {
-  color: #4ec7f3;
 }
 
 @keyframes show {
@@ -180,19 +204,7 @@ p {
   }
 }
 
-/* Scroll Down Animation */
-html,
-body {
-  height: 100%;
-}
-
-#section01,
-#section02 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
+/* scroll down */
 #section01::after {
   position: absolute;
   bottom: 0;
@@ -204,12 +216,12 @@ body {
 #section01 > a {
   position: absolute;
   display: block;
-  top: 80vh;
+  top: 85vh;
   left: 50%;
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 1px solid #29634f;
+  border: 1px solid #fff;
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -222,8 +234,8 @@ body {
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 1px solid #29634f;
-  border-bottom: 1px solid #29634f;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
@@ -237,7 +249,7 @@ body {
   content: "";
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 0 0 rgba(62, 114, 96, 0.1);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 2s infinite;
@@ -253,7 +265,7 @@ body {
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 45px rgba(62, 114, 96, 0.1);
+    box-shadow: 0 0 0 45px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -269,7 +281,7 @@ body {
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 45px rgba(62, 114, 96, 0.1);
+    box-shadow: 0 0 0 45px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -279,8 +291,9 @@ body {
 
 /* Back to Top */
 #topArrow {
-  width: 40px;
-  line-height: 40px;
+  width: 45px;
+  line-height: 45px;
+  border-radius: 30%;
   overflow: hidden;
   z-index: 999;
   display: none;
@@ -293,8 +306,8 @@ body {
   position: fixed;
   bottom: 50px;
   right: 0;
-  background-color: rgba(41, 99, 79, 0.2);
-  color: #29634f;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
   text-align: center;
   font-size: 30px;
   text-decoration: none;
@@ -302,7 +315,7 @@ body {
 
 #topArrow:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: #a9a9a9;
 }
 
 /* Media Query */
@@ -311,7 +324,8 @@ body {
     font-size: 9vw;
   }
 
-  p {
+  p,
+  .resume {
     font-size: 1rem;
     text-align: center;
   }
@@ -321,8 +335,8 @@ body {
   }
 
   .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 
   .col-sm-4,
@@ -331,7 +345,7 @@ body {
   }
 
   #flip {
-    font-size: 9vw;
+    font-size: 8.5vw;
     height: 90px;
   }
 
@@ -346,8 +360,17 @@ body {
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
+  p,
+  .resume {
+    font-size: 1.4rem;
+  }
+
+  .resume {
+    width: 50%;
+  }
+
   #flip {
-    font-size: 3.3rem;
+    font-size: 3rem;
     height: 90px;
   }
 }

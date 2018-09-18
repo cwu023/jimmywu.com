@@ -1,12 +1,11 @@
 // Scroll Down Animation
 $(function() {
-  $(".scroll").on("click", function(e) {
-    e.preventDefault();
+  $(".scroll-down").click(function() {
     $("html, body").animate(
-      { scrollTop: $($(this).attr("href")).offset().top },
-      600,
-      "linear"
+      { scrollTop: $("#section02").offset().top },
+      "slow"
     );
+    return false;
   });
 });
 
