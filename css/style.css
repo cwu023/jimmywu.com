@@ -1,10 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  background: #00c6ff;
-  background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
-  background-repeat: repeat-y;
+  background: #1d976c;
+  background: -webkit-linear-gradient(to top, #84e0a6, #1d976c);
+  background: linear-gradient(to top, #84e0a6, #1d976c);
 }
 
 a {
@@ -35,7 +34,7 @@ h1 {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 40px;
 }
 
@@ -65,16 +64,16 @@ p {
   color: #000;
 }
 
-.col-sm-4,
-.col-sm-8 {
-  margin-top: 200px;
+.col-sm-5,
+.col-sm-7 {
+  margin-top: 25vh;
 }
 
+/* Navbar styles */
 .header {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
-/* Navbar styles */
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   text-decoration: none;
@@ -339,9 +338,9 @@ p {
     height: 160px;
   }
 
-  .col-sm-4,
-  .col-sm-8 {
-    margin-top: 40px;
+  .col-sm-5,
+  .col-sm-7 {
+    margin-top: 70px;
   }
 
   #flip {
@@ -362,11 +361,16 @@ p {
 @media (min-width: 577px) and (max-width: 991px) {
   p,
   .resume {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .resume {
     width: 50%;
+  }
+
+  .col-sm-5,
+  .col-sm-7 {
+    margin-top: 20vh;
   }
 
   #flip {

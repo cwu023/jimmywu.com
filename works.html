@@ -9,8 +9,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/works.css">
   <title>Front-End Web Developer | Jimmy Wu</title>
 </head>
 
@@ -24,8 +24,8 @@
           <img src="image/logo.png" width="auto" height="60" alt="">
         </a>
       </nav>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -40,8 +40,157 @@
     </nav>
   </div>
 
-  <div class="container " data-aos="fade-down">
-    <h1>Hi, I'm Jimmy Wu 😀<br> A Front-End Web Developer ♥️💻</h1>
+  <!-- Works page -->
+
+  <div class="container" id="section01">
+    <h1 data-aos="zoom-in-up">Featured Works</h1>
+
+    <h3>In the beginning of 2018, I have been working on improving my technical skills.</h3>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/gallery.png" alt="" data-aos="fade-right">
+      </div>
+
+      <div class="col-md-6">
+        <div data-aos="fade-right">
+          <h4>Interactive Photo Gallery</h4>
+          <p>For this project I built a responsive and interactive photo gallery with a search filter input. You can
+            search pictures with its captions. Unmatched pictures will be hidden.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Lightbox Plugin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/guide.png" alt="" data-aos="fade-left">
+      </div>
+
+      <div class="col-md-6">
+        <div data-aos="fade-left">
+          <h4>Web Style Guide</h4>
+          <p>For this project I learned how to organize my CSS using Sass. Using Sass features like variable, mixin,
+            and nested CSS properties helped making my CSS more modular and easier for applying future changes.
+            Separating
+            my CSS into different components with partials also makes it easier to debug my CSS code.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/media.png" alt="" data-aos="fade-right">
+      </div>
+
+      <div class="col-md-6">
+        <div data-aos="fade-right">
+          <h4>Interactive Video Player</h4>
+          <p>
+            In this project I built an interactive media player web page using a JavaScript video/audio player library.
+            Customized the video player's style a little bit. Also added captions where they will be highlighted as the
+            video plays. You can also click the captions to jump to the corresponding time of the video.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Design</li>
+            <li>MediaElement.js</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/directory.png" alt="" data-aos="fade-left">
+      </div>
+
+      <div class="col-md-6">
+        <div data-aos="fade-left">
+          <h4>Employee Directory</h4>
+          <p>In this project I built an employee directory using a public API "Random User Generator". I requested
+            random
+            user data from the API using AJAX and displayed the information on the page dynamically. Users can also
+            search by employee names.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript, jQuery</li>
+            <li>Responsive Design</li>
+            <li>AJAX</li>
+            <li>Public API: "Random User Generator" - <a href="https://randomuser.me/" target="_blank">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/giphy.png" alt="" data-aos="fade-right">
+      </div>
+
+      <div class="col-md-6">
+        <div data-aos="fade-right">
+          <h4>React Giphy Gallery</h4>
+          <p>In this project I used create-react-app to build my Giphy gallery app. I fetched interesting gifs from
+            Giphy's public API and utilized react router dom to link to different page URLs of the app.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Design</li>
+            <li>React.js</li>
+            <li>AJAX</li>
+            <li>Public API: "Giphy" - <a href="https://developers.giphy.com/" target="_blank">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-thumbnail" src="./image/portfolio.png" alt="" data-aos="fade-left">
+      </div>
+
+      <div class="col-md-6 last">
+        <div data-aos="fade-left">
+          <h4>My Portfolio Website</h4>
+          <p>For this project I built a responsive and interactive photo gallery with a search filter input. You can
+            search pictures with its captions. Unmatched pictures will be hidden.</p>
+          <span>Technologies used:</span>
+          <ul>
+            <li>HTML5, CSS3, JavaScript, jQuery</li>
+            <li>Responsive Design</li>
+            <li>Bootstrap4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a id="topArrow" href="#">&#10148;</a>
   </div>
 
 
@@ -64,15 +213,23 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+
   <script>
     AOS.init({
-      duration: 700
+      duration: 1500
     });
   </script>
 </body>
