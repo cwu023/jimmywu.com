@@ -176,6 +176,10 @@ i {
     font-size: 9vw;
   }
 
+  h3 {
+    font-size: 1.2rem;
+  }
+
   i {
     font-size: 500%;
   }
@@ -193,6 +197,10 @@ i {
 @media (min-width: 577px) and (max-width: 991px) {
   i {
     font-size: 700%;
+  }
+
+  h3 {
+    font-size: 1.3rem;
   }
 
   .col-md-6 {
