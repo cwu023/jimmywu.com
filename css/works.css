@@ -188,6 +188,11 @@ span {
   color: #a9a9a9;
 }
 
+.svg {
+  height: 70px;
+  width: 70px;
+}
+
 /* Media Query */
 @media (max-width: 576px) {
   h1 {
@@ -211,6 +216,11 @@ span {
   .last {
     margin-bottom: 70px;
   }
+
+  .svg {
+    height: 10vw;
+    width: 10vw;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
@@ -230,6 +240,11 @@ span {
 
   .last {
     margin-bottom: 80px;
+  }
+
+  .svg {
+    height: 8vw;
+    width: 8vw;
   }
 }
 

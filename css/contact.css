@@ -54,6 +54,11 @@ i {
   cursor: pointer;
 }
 
+.svg {
+  height: 70px;
+  width: 70px;
+}
+
 /* Navbar styles */
 .header {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
@@ -192,6 +197,11 @@ i {
   .last {
     margin-bottom: 90px;
   }
+
+  .svg {
+    height: 10vw;
+    width: 10vw;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
@@ -210,6 +220,11 @@ i {
 
   .last {
     margin-bottom: 100px;
+  }
+
+  .svg {
+    height: 8vw;
+    width: 8vw;
   }
 }
 
