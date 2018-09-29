@@ -72,6 +72,11 @@ span {
   font-size: 1.2rem;
 }
 
+.svg {
+  height: 70px;
+  width: 70px;
+}
+
 /* Navbar styles */
 .header {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
@@ -186,11 +191,6 @@ span {
 #topArrow:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: #a9a9a9;
-}
-
-.svg {
-  height: 70px;
-  width: 70px;
 }
 
 /* Media Query */

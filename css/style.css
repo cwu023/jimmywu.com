@@ -10,6 +10,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a:visited {
   color: #fff;
 }
@@ -34,8 +38,7 @@ a:visited {
   }
 }
 
-a:hover {
-  text-decoration: none;
+span > a:hover {
   color: #eee;
   animation: bounce 1s;
 }
@@ -60,7 +63,7 @@ p {
   margin-bottom: 40px;
 }
 
-/* Profile icture */
+/* Profile picture */
 .profile-img {
   width: 250px;
   height: 250px;
@@ -337,6 +340,7 @@ span {
 }
 
 /* Back to Top */
+/* Back to Top */
 #topArrow {
   width: 45px;
   line-height: 45px;
@@ -366,6 +370,12 @@ span {
 }
 
 /* Media Query */
+@media (max-width: 340px) {
+  #section02 {
+    height: 115vh;
+  }
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 9vw;
@@ -396,7 +406,7 @@ span {
   }
 
   #flip {
-    font-size: 8.5vw;
+    font-size: 8.3vw;
     height: 90px;
   }
 
