@@ -1,9 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  background: #ffb75e;
-  background: -webkit-linear-gradient(to bottom, #d58002, #ffb75e);
-  background: linear-gradient(to bottom, #d58002, #ffb75e);
+  background: #d58002;
 }
 
 a {
@@ -47,7 +45,7 @@ hr {
 }
 
 i {
-  font-size: 900%;
+  font-size: 600%;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -57,6 +55,10 @@ i {
 .svg {
   height: 70px;
   width: 70px;
+}
+
+.row {
+  margin-bottom: 30px;
 }
 
 /* Navbar styles */
@@ -144,35 +146,6 @@ i {
 
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
-}
-
-/* Back to Top */
-#topArrow {
-  width: 45px;
-  line-height: 45px;
-  border-radius: 30%;
-  overflow: hidden;
-  z-index: 999;
-  display: none;
-  cursor: pointer;
-  -moz-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  position: fixed;
-  bottom: 50px;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-#topArrow:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #a9a9a9;
 }
 
 /* Media Query */
