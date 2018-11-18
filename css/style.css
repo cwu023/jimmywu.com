@@ -19,7 +19,6 @@ a:visited {
 
 span > a:hover {
   color: #eee;
-  animation: bounce 1s;
 }
 
 h1 {
